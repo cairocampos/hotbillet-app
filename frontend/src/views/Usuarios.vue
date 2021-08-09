@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeadPage>
-      <h1 class="text-2xl text-gray-600">Dashboard</h1>
+      <h1 class="title-page">Usuários</h1>
     </HeadPage>
   </div>
 </template>

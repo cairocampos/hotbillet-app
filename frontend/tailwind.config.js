@@ -7,7 +7,11 @@ module.exports = {
         primary: '',
         secondary: '',
         warning: '',
-        danger:''
+        danger:'',
+        // green:"#00D287",
+        // orange: "#FE7700",
+        // yellow: "#F5CE2D",
+        // blue:"#36A8E0",
       }
     },
   },

@@ -7,7 +7,7 @@ body {
 }
 
 .btn {
-	@apply py-2 px-8;
+	@apply text-center py-2 px-8;
 }
 
 .btn-circle {
@@ -17,11 +17,19 @@ body {
 .btn-primary {
 }
 
+.btn-dark {
+	background: linear-gradient(180deg, #2F2D2C 0%, #494545 164.47%);
+}
+
 .btn-secondary {
 	@apply bg-gray-200;
 }
 
 .btn-danger {
+}
+
+.title-page {
+	@apply text-2xl text-gray-600;
 }
 
 .text-danger {

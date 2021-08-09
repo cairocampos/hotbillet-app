@@ -1,11 +1,10 @@
 <template>
   <div class="min-h-screen w-full">
     <template v-if="!isLogin">
-		<TheHeader />
 		<div class="flex">
 		<Menu class="flex-shrink-0"/>
     <main id="main">
-      <router-view v-slot="{ Component }" class="pr-16 pl-80 py-20">
+      <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
         <component :is="Component" />
         </transition>
@@ -18,12 +17,10 @@
 </template>
 
 <script>
-import TheHeader from '@/components/TheHeader.vue';
 import Menu from '@/components/Menu.vue';
 import {api} from '@/services';
 export default {
   components: {
-    TheHeader,
     Menu,
   },
   computed: {
@@ -62,6 +59,9 @@ html, body {
 }
 
 #main {
-  flex: 1;
+  flex: 1 1 0%;
+  min-height: 100vh;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 </style>
